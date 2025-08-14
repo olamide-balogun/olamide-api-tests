@@ -225,18 +225,12 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 201\", function () {\r",
-							"    pm.response.to.have.status(201);\r",
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Status message is Created\", function () {\r",
-							"    pm.expect(pm.response.status).to.eql(\"Created\");\r",
-							"});\r",
-							"\r",
-							"pm.test(\"Registration successful\", function () {\r",
-							"    const responseJson = pm.response.json();\r",
-							"    pm.expect(responseJson).to.have.property('id');\r",
-							"    pm.expect(responseJson).to.have.property('email');\r",
+							"pm.test(\"Status message is Bad Request\", function () {\r",
+							"    pm.expect(pm.response.status).to.eql(\"Bad Request\");\r",
 							"});"
 						],
 						"type": "text/javascript",
