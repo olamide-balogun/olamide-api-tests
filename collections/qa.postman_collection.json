@@ -518,12 +518,12 @@
 	"variable": [
 		{
 			"key": "base_url",
-			"value": "",
+			"value": "https://reqres.in/api",
 			"type": "string"
 		},
 		{
 			"key": "user_id",
-			"value": "",
+			"value": "1",
 			"type": "string"
 		},
 		{
